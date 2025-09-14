@@ -71,15 +71,15 @@ GLuint compileShader(GLenum type, const std::string &source, GLint *status=nullp
 // Initialize the application
 bool init() {
    // Set canvas size
-	emscripten_set_canvas_element_size("#canvas", 640, 480);
+   emscripten_set_canvas_element_size("#canvas", 640, 480);
 
    // Create a WebGL context
-	EmscriptenWebGLContextAttributes attr;
-	emscripten_webgl_init_context_attributes(&attr);
-	attr.enableExtensionsByDefault = 1;
-	attr.majorVersion = 1;
-	EMSCRIPTEN_WEBGL_CONTEXT_HANDLE ctx = emscripten_webgl_create_context("#canvas", &attr);
-	emscripten_webgl_make_context_current(ctx);
+   EmscriptenWebGLContextAttributes attr;
+   emscripten_webgl_init_context_attributes(&attr);
+   attr.enableExtensionsByDefault = 1;
+   attr.majorVersion = 1;
+   EMSCRIPTEN_WEBGL_CONTEXT_HANDLE ctx = emscripten_webgl_create_context("#canvas", &attr);
+   emscripten_webgl_make_context_current(ctx);
 
    // Initialize the OpenGL render data
    printf("Initialize OpenGL\n");
