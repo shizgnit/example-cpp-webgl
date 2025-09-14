@@ -45,4 +45,7 @@ brew services start nginx
 cp example_cpp_webgl.* /opt/homebrew/var/www/
 ```
 
-http://localhost:8080/example_cpp_webgl.html
+Open in browser: http://localhost:8080/example_cpp_webgl.html
+
+[![Screenshot](Screenshot.png)](Screenshot.png)
+
