@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.5)
-add_definitions("-std=c++17")
+cmake_minimum_required(VERSION 3.1)
+add_definitions("-std=c++14")
 
 # Setup the project
 set(PROJECT_NAME "example_cpp_webgl")
