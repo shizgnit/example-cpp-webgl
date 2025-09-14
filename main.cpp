@@ -117,7 +117,7 @@ bool init() {
    glEnableVertexAttribArray(g_shaderAttributeColorLoc);
    printf("Geometry data uploaded, %d\n", g_vertexAttributeArrayId);
 
-	return true;
+   return true;
 }
 
 // Render a frame
