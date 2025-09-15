@@ -17,6 +17,8 @@ target_link_libraries(${PROJECT_NAME} ${OPENGL_gl_LIBRARY})
 # Add OpenGL include directories
 target_include_directories(${PROJECT_NAME} PRIVATE ${OPENGL_INCLUDE_DIR})
 
-# Add Emscripten include directory
-target_include_directories(${PROJECT_NAME} PRIVATE /Users/codeneko/Projects/emsdk/upstream/emscripten/cache/sysroot/include)
+# Define EMSDK_ROOT as the path to deps/emsdk relative to project root
+set(EMSDK_ROOT "${CMAKE_SOURCE_DIR}/deps/emsdk")
+# Add Emscripten include directory using EMSDK_ROOT
+target_include_directories(${PROJECT_NAME} PRIVATE ${EMSDK_ROOT}/upstream/emscripten/cache/sysroot/include)
 
